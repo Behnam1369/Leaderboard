@@ -33,7 +33,7 @@ run `npm start` to see the result on a live server.
 
 
 ## Live Demo
-will be added
+[Click here to see the live demo](https://behnam1369.github.io/Leaderboard/dist/)
 
 ## Authors
 
