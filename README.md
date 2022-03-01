@@ -28,6 +28,7 @@ will be added
 
 ## Setup guide
 After cloning the repository, run `npm install` to get all required node modules. 
+
 run `npm start` to see the result on a live server. 
 
 
