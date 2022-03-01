@@ -1,0 +1,116 @@
+html {
+  margin: 0;
+  height: 99%;
+}
+body {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+@font-face {
+  font-family: exwayer;
+  src: url(./fonts/exwayer.ttf);
+}
+
+@font-face {
+  font-family: autodestruct;
+  src: url(./fonts/autodestruct.ttf);
+}
+
+h1 {
+  font-family: 'exwayer', sans-serif;
+  font-size: 55px;
+  margin: 10px;
+  margin-left: 10vw;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+
+  .results { 
+    width: 380px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    h2 {
+      flex: 1;
+      flex-wrap: wrap;
+      flex-basis: calc(100% - 150px);
+    }
+
+    .btnRefresh {
+      width:150px;
+      height:40px;
+      flex:0;
+    }
+
+    ul {
+      max-width: 380px;
+      height: 350px;
+      border: solid 1px black;
+      flex-basis: 100%;
+      padding: 0;
+
+      li {
+        list-style: none;
+        font-family: autodestruct;
+        padding: 10px 20px;
+      }
+    }
+    
+  }
+
+  .form {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+
+    input[type="text"], 
+    input[type="number"] {
+      margin-bottom: 10px;
+      height: 30px;
+    }
+
+    .btnSubmit {
+      height: 40px;
+      align-self: flex-end;
+    }
+
+  }
+
+}
+
+@media screen and (max-width : 400px ) {
+  body {
+    height: auto;
+  }
+  
+  h1 {
+    margin: 40px 0 0 0;
+    text-align: center;
+  }
+
+  .main {
+    flex-wrap: wrap;
+    .results { 
+      flex-basis: 100%;
+    }
+  }
+
+  .form {
+    h2{
+      text-align: center;
+
+    }
+
+    input[type="button"] {
+      margin-bottom: 100px;
+    }
+  }
+}
