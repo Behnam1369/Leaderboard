@@ -8,7 +8,9 @@ Using API calls to send and reveive data
 # Requirements for this project
 
 Part 1: [Project setup](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/m1_basic_structure.md)
+
 Part 2: [Hit the API](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/m2_send_receive_data.md)
+
 Part 3: [Final touches](https://github.com/microverseinc/curriculum-javascript/blob/main/leaderboard/m3_final_touches.md)
 
 
