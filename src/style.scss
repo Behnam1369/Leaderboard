@@ -2,6 +2,7 @@ html {
   margin: 0;
   height: 99%;
 }
+
 body {
   margin: 0;
   padding: 0 20px;
@@ -32,7 +33,7 @@ h1 {
   display: flex;
   justify-content: space-around;
 
-  .results { 
+  .results {
     width: 380px;
     display: flex;
     align-items: baseline;
@@ -45,9 +46,9 @@ h1 {
     }
 
     .btnRefresh {
-      width:150px;
-      height:40px;
-      flex:0;
+      width: 150px;
+      height: 40px;
+      flex: 0;
     }
 
     ul {
@@ -63,7 +64,6 @@ h1 {
         padding: 10px 20px;
       }
     }
-    
   }
 
   .form {
@@ -71,7 +71,7 @@ h1 {
     display: flex;
     flex-direction: column;
 
-    input[type="text"], 
+    input[type="text"],
     input[type="number"] {
       margin-bottom: 10px;
       height: 30px;
@@ -81,16 +81,14 @@ h1 {
       height: 40px;
       align-self: flex-end;
     }
-
   }
-
 }
 
-@media screen and (max-width : 400px ) {
+@media screen and (max-width: 400px) {
   body {
     height: auto;
   }
-  
+
   h1 {
     margin: 40px 0 0 0;
     text-align: center;
@@ -98,15 +96,15 @@ h1 {
 
   .main {
     flex-wrap: wrap;
-    .results { 
+
+    .results {
       flex-basis: 100%;
     }
   }
 
   .form {
-    h2{
+    h2 {
       text-align: center;
-
     }
 
     input[type="button"] {
