@@ -15,7 +15,7 @@ Part 3: [Final touches](https://github.com/microverseinc/curriculum-javascript/b
 
 
 # screenshot 
-will be added
+![screenshot](/src/images/Demo.jpg)
 
 ## Built using
 
