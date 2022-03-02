@@ -11,9 +11,9 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   height: 100%;
 }
 
@@ -75,15 +75,15 @@ h1 {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   padding: 0;
+  overflow: auto;
 }
 
 .main .results ul li {
   list-style: none;
-  font-family: autodestruct, sans-serif;
   padding: 10px 20px;
 }
 
-.main .form {
+.main form {
   width: 250px;
   display: flex;
   -webkit-box-orient: vertical;
@@ -92,16 +92,28 @@ h1 {
   flex-direction: column;
 }
 
-.main .form input[type="text"],
-.main .form input[type="number"] {
+.main form input[type="text"],
+.main form input[type="number"] {
   margin-bottom: 10px;
   height: 30px;
 }
 
-.main .form .btnSubmit {
+.main form .btnSubmit {
   height: 40px;
   -ms-flex-item-align: end;
   align-self: flex-end;
+}
+
+p {
+  text-align: center;
+}
+
+p.success {
+  color: green;
+}
+
+p.error {
+  color: red;
 }
 
 @media screen and (max-width: 400px) {
@@ -124,11 +136,11 @@ h1 {
     flex-basis: 100%;
   }
 
-  .form h2 {
+  form h2 {
     text-align: center;
   }
 
-  .form input[type="button"] {
+  form input[type="button"] {
     margin-bottom: 100px;
   }
 }

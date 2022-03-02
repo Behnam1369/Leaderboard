@@ -1,4 +1,19 @@
 import './style.css';
-import './modules/showScores.js';
+import showScores from './modules/showScores.js';
+import submitScore from './modules/submitScore.js';
 
-// Game with ID: ffLA8bI6eF9yyXwbNJ4E added.
+window.addEventListener('load', () => {
+  showScores();
+});
+
+const form = document.forms[0];
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  await submitScore(form);
+  showScores();
+});
+
+const btnRefresh = document.querySelector('.btnRefresh');
+btnRefresh.addEventListener('click', () => {
+  showScores();
+});
