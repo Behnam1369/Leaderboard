@@ -10,20 +10,16 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
+  background-color: whitesmoke;
 }
 
 @font-face {
-  font-family: exwayer;
-  src: url(./fonts/exwayer.ttf);
-}
-
-@font-face {
-  font-family: autodestruct;
-  src: url(./fonts/autodestruct.ttf);
+  font-family: dino;
+  src: url(./fonts/dino.ttf);
 }
 
 h1 {
-  font-family: 'exwayer', sans-serif;
+  font-family: 'dino', sans-serif;
   font-size: 55px;
   margin: 10px;
   margin-left: 10vw;
@@ -32,6 +28,48 @@ h1 {
 .main {
   display: flex;
   justify-content: space-around;
+  font-family: 'dino', sans-serif;
+
+  form {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/dino.jpg);
+    background-size: 510px 160px;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: -205px;
+
+    h2 {
+      font-family: 'dino', sans-serif;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      margin-bottom: 10px;
+      height: 30px;
+      font-family: 'dino', sans-serif;
+      outline: none;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .btnSubmit {
+      height: 40px;
+      align-self: flex-end;
+      font-family: 'dino', sans-serif;
+      cursor: pointer;
+    }
+  }
 
   .results {
     width: 380px;
@@ -43,12 +81,16 @@ h1 {
       flex: 1;
       flex-wrap: wrap;
       flex-basis: calc(100% - 150px);
+      font-family: 'dino', sans-serif;
+      font-size: 14px;
     }
 
     .btnRefresh {
       width: 150px;
       height: 40px;
       flex: 0;
+      font-family: 'dino', sans-serif;
+      cursor: pointer;
     }
 
     ul {
@@ -62,30 +104,16 @@ h1 {
       li {
         list-style: none;
         padding: 10px 20px;
+        margin: 4px;
+        font-size: 12px;
       }
-    }
-  }
-
-  form {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-
-    input[type="text"],
-    input[type="number"] {
-      margin-bottom: 10px;
-      height: 30px;
-    }
-
-    .btnSubmit {
-      height: 40px;
-      align-self: flex-end;
     }
   }
 }
 
 p {
   text-align: center;
+  font-family: 'dino', sans-serif;
 }
 
 p.success {
@@ -102,8 +130,9 @@ p.error {
   }
 
   h1 {
-    margin: 40px 0 0 0;
+    margin: 40px 0 20px 0;
     text-align: center;
+    font-size: 28px;
   }
 
   .main {
@@ -115,6 +144,8 @@ p.error {
   }
 
   form {
+    min-height: 280px;
+
     h2 {
       text-align: center;
     }
